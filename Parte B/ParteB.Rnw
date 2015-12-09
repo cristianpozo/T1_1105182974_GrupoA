@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[spanish]{babel} 
+\usepackage{multirow}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[left=2.5 cm,right=2cm,top=2.5 cm,bottom=3cm]{geometry}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\begin{flushleft}
+\raggedright{ 
+\small{\textit{\textbf{Area de la Energia, las Industrias y los Recursos Naturales No Renovables}}}
+}
+\thinspace
+\rule{1\textwidth}{0.04cm} 
+\thinspace
+\raggedleft{ 
+\Large{\textsc{Carrera de Ingenieria en Sistemas}}}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+\begin{Huge}
+\end{Huge}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\begin{LARGE}
+\medskip
+\textsc{TEST 1}\\
+\bigskip
+\end{LARGE}
+\small{\textsc{Sexto A}}\\
+\bigskip
+\end{center}
+\bigskip
+\bigskip
+\begin{flushleft}
+\textit{\textbf{Autor: CRISTIAN ESTEBAN POZO CALDERON}}\\ 
+\textbf{Correo: cepozoc@unl.edu.ec}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\diamond$} 
+\item \href{http://www.iralis.org/?q=node%2F10&paso=10&letra=P&id=5216/}{ECINF5216}
+\end{itemize}
+\bigskip
+\bigskip
+\end{flushleft}
+\thinspace
+\bigskip
+\begin{flushleft}
+\textit{\textbf{Tutor:}}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\diamond$} 
+\item ECNIF4179\\
+\end{itemize}
+\bigskip
+\bigskip
+\end{flushleft}
+\thinspace
+\bigskip
+
+\cfoot[Loja]{\small{\textsc{Loja-Ecuador\\ 2015}}}
+\renewcommand{\footrulewidth}{0pt}
+\newpage{}
+\begin{itemize}
+\item \textbf {Parte B  }\\
+\textbf{Desarrollar las siguientes actividades a partir del dataset Titanic (Data sets in package 'datasets'), y de la Ingeniería del Software:}\par
+\textbf {1.Un documento R Sweave, con portada simple de datos personales del estudiante }\\
+\textbf{2.¿Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así, ¿cómo puede modificarse para que asimile las características únicas de éstas?}\par
+Si es aplicable la ingenieria de software cuando se elaboran webapps ya que en la actualidad las webapps an alcanzado un alto grado de robustes ascociandose a las mismas bases de datos y otros sistemas completos es or esto que si se aplicaria la ingenieria de software ya que esta permite paso a paso de una manera ordenada poder desarrollar todo lo relacionado al software, se pueden modificar en diversos aspectos como en el analisis ya que en esta parte se debe de tomar muchos mas aspectos ya que para un tipo de analisis para una aplicacion determinada no es lo mismo que para una webapp en la webapp influyen mas aspectos los cuales en la ingenieria de software se los deberia estudiar para implementarlos y poder crear estandares idoneos para su utilización 
+\item \textbf {3.Un breve descripción del dataset Titanic}\\
+EL Data set Titanic Muestra las personas que se encontraban viejando en el Barco Titanic\par Muestra las cantidades exactas en diferentes Tablas de los Niños abordo tanto de los que sobreviveron como de los que no sobrevieron y aque clase pertenecian: 1era, 2da,3ra y tripulacion.\par
+Muestra las cantidades exactas en diferentes Tablas de los Adultos abordo tanto de los que sobreviveron como de los que no sobrevieron y aque clase pertenecian: 1era, 2da,3ra y tripulacion.\par
+\textbf {Mostrar el Dataset}\par
+<<results=verbatim,echo=FALSE>>=
+print(Titanic)
+
+@
+\textbf {Cual es el numero total de casos en el dataset}
+\textbf {El numero de casos son:}
+<<results=verbatim,echo=FALSE>>=
+sum(Titanic)
+@
+\end{itemize}
+\end{flushleft}
+\end{document}
